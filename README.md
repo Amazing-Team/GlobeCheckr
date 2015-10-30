@@ -2,7 +2,7 @@
 A cool app that provides you with nice travel choices
 
 
-### Schiphol API key:
+### Schiphol Flights API:
 
 **Appid**: d263c41c
 
