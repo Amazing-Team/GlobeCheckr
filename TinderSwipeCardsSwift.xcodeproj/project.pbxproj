@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47C2B9F61BE4631B00F53885 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C2B9F51BE4631B00F53885 /* LoginController.swift */; };
 		CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */; };
 		CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002C1AF1D31400AF5C5F /* ViewController.swift */; };
 		CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2D002E1AF1D31400AF5C5F /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47C2B9F51BE4631B00F53885 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CC2D00251AF1D31400AF5C5F /* TinderSwipeCardsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderSwipeCardsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00291AF1D31400AF5C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				CC2D004A1AF1D3FA00AF5C5F /* DraggableView.swift */,
 				CC2D004C1AF1D70D00AF5C5F /* OverlayView.swift */,
 				CC2D002E1AF1D31400AF5C5F /* Main.storyboard */,
+				47C2B9F51BE4631B00F53885 /* LoginController.swift */,
 				CC2D00311AF1D31400AF5C5F /* Images.xcassets */,
 				CC2D00331AF1D31400AF5C5F /* LaunchScreen.xib */,
 				CC2D00281AF1D31400AF5C5F /* Supporting Files */,
@@ -165,6 +168,8 @@
 		CC2D001D1AF1D31400AF5C5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = gcweb;
 				TargetAttributes = {
@@ -222,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2D004B1AF1D3FA00AF5C5F /* DraggableView.swift in Sources */,
+				47C2B9F61BE4631B00F53885 /* LoginController.swift in Sources */,
 				CC2D004D1AF1D70D00AF5C5F /* OverlayView.swift in Sources */,
 				CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */,
 				CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */,
@@ -423,6 +429,7 @@
 				CC2D00461AF1D31400AF5C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC2D00471AF1D31400AF5C5F /* Build configuration list for PBXNativeTarget "TinderSwipeCardsSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +438,7 @@
 				CC2D00491AF1D31400AF5C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
