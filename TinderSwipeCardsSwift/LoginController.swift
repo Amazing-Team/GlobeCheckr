@@ -14,6 +14,16 @@ import Foundation
 class LoginController: UIViewController {
 
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
     @IBAction func callApi(sender: UIButton) {
         
             /* API Structure
