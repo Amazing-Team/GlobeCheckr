@@ -35,10 +35,6 @@ class LoginController: UIViewController {
                     print(d)
                 }
                 
-                
-//                let err: NSError?
-                
-                
                 do {
                     let jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary
                     print(jsonResult)
@@ -49,40 +45,10 @@ class LoginController: UIViewController {
                 }
                 
                 
-                
-//                if err != nil {
-//                    // If there is an error parsing JSON, print it to the console
-//                    print("JSON Error \(err!.localizedDescription)")
-//                }
-                
-                
-                
-                
-                
-                
-                
-                
-//                let json = JSONValue(jsonResult)
-//                let count: Int? = json["data"].array?.count
-//                print("found \(count!) challenges")
-//    
-//                if let ct = count {
-//                    for index in 0...ct-1 {
-//                        // println(json["data"][index]["challengeName"].string!)
-//                        if let name = json["data"][index]["challengeName"].string {
-//                            println(name)
-//                        }
-//                        
-//                    }
-//                }
-                
             }
             
             task.resume()
             
-        
-    
-    
     }
     
 
