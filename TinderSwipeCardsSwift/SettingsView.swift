@@ -56,18 +56,13 @@ class SettingsView: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         daysArray = populateArray (1, end: 31)
         yearsArray = populateArray (2015, end: 2040)
         
-
         justPicker.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
         justPicker.dataSource = self
         justPicker.delegate = self
         
-        
         justPicker2.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
         justPicker2.dataSource = self
         justPicker2.delegate = self
-
-        
-        
     }
     
     
