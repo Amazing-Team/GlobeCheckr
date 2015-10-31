@@ -11,6 +11,7 @@ import UIKit
 
 class DraggableViewBackground: UIView, DraggableViewDelegate {
     var exampleCardLabels: [String]!
+    var exampleCardAirports: [String]!
     var allCards: [DraggableView]!
 
     let MAX_BUFFER_SIZE = 2
@@ -32,7 +33,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         super.init(frame: frame)
         super.layoutSubviews()
         self.setupView()
-        exampleCardLabels = ["first", "second", "third", "fourth", "last"]
+        exampleCardLabels = ["Cassablanca", "Malaga", "Malaga", "Alicante", "Valencia", "Thessaloniki", "Barcelona", "Barcelona", "Larnaca", "Athens", "Malaga", "Malaga", "Marrakesh", "Lisbon", "Faro", "Alicante", "Nice", "Barcelona", "Barcelona", "Paris"]
+        exampleCardAirports = ["CMN", "AGP", "AGP", "ALC", "VLC", "SKG", "BCN", "BCN", "LCA", "ATH", "AGP", "AGP", "RAK", "LIS", "FAO", "ALC", "NCE", "BCN", "BCN", "ORY"]
         allCards = []
         loadedCards = []
         cardsLoadedIndex = 0
@@ -57,6 +59,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     func createDraggableViewWithDataAtIndex(index: NSInteger) -> DraggableView {
         let draggableView = DraggableView(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT))
         draggableView.information.text = exampleCardLabels[index]
+        draggableView.backgroundColor = UIColor(patternImage: UIImage(named:exampleCardAirports[index]+".jpg")!)
         draggableView.delegate = self
         return draggableView
     }

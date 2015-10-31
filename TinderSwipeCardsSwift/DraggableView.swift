@@ -42,9 +42,9 @@ class DraggableView: UIView {
         information = UILabel(frame: CGRectMake(0, 50, self.frame.size.width, 100))
         information.text = "no info given"
         information.textAlignment = NSTextAlignment.Center
-        information.textColor = UIColor.blackColor()
+        information.textColor = UIColor.whiteColor()
 
-        self.backgroundColor = UIColor.whiteColor()
+        //self.backgroundColor = UIColor(patternImage: UIImage(named:"CMN.jpg")!)
 
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "beingDragged:")
 
