@@ -36,7 +36,7 @@ class LoginController: UIViewController {
             let url = NSURL(string: "http://opendutchhackathon.w3ibm.mybluemix.net/ams/20151101/20151110/100-2000/2")
             
             let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data: NSData?,  response: NSURLResponse?, error: NSError?) -> Void in
-                
+
                 //Table with the destiantions available
                 var destinations = [String]()
                 
@@ -102,7 +102,6 @@ class LoginController: UIViewController {
             }
             
             task.resume()
-        
     }
     
 

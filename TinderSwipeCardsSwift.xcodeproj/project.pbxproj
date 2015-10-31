@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4744D2311BE4CAEA009DA45D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4744D2301BE4CAEA009DA45D /* SettingsView.swift */; };
 		47C2B9F61BE4631B00F53885 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C2B9F51BE4631B00F53885 /* LoginController.swift */; };
 		85A04D681BE5060D001389F2 /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A04D671BE5060D001389F2 /* SwipeCard.swift */; };
 		85A04D6A1BE50624001389F2 /* SwipeCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A04D691BE50624001389F2 /* SwipeCard.xib */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4744D2301BE4CAEA009DA45D /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		47C2B9F51BE4631B00F53885 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		85A04D671BE5060D001389F2 /* SwipeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCard.swift; sourceTree = "<group>"; };
 		85A04D691BE50624001389F2 /* SwipeCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeCard.xib; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				CC2D00311AF1D31400AF5C5F /* Images.xcassets */,
 				CC2D00331AF1D31400AF5C5F /* LaunchScreen.xib */,
 				CC2D00281AF1D31400AF5C5F /* Supporting Files */,
+				4744D2301BE4CAEA009DA45D /* SettingsView.swift */,
 			);
 			path = TinderSwipeCardsSwift;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4744D2311BE4CAEA009DA45D /* SettingsView.swift in Sources */,
 				CC2D004B1AF1D3FA00AF5C5F /* DraggableView.swift in Sources */,
 				47C2B9F61BE4631B00F53885 /* LoginController.swift in Sources */,
 				CC2D004D1AF1D70D00AF5C5F /* OverlayView.swift in Sources */,

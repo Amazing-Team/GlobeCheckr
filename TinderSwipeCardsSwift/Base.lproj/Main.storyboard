@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cL-0B-smX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-687" y="-687"/>
+            <point key="canvasLocation" x="-687" y="-668"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="aGN-ea-oSW">
@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="70S-gu-IMP"/>
+                                    <segue destination="Vg4-JO-Gqu" kind="show" id="ZjS-bT-ek8"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WL8-KI-qoh">
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zmI-ga-t2S">
-                                <rect key="frame" x="218" y="86" width="164" height="169"/>
+                                <rect key="frame" x="185" y="110" width="231" height="235"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-ib-kzB">
                                 <rect key="frame" x="277" y="550" width="46" height="30"/>
@@ -92,6 +92,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztu-WR-6ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="-668"/>
+        </scene>
+        <!--Settings View-->
+        <scene sceneID="UxV-gl-CB0">
+            <objects>
+                <viewController id="Vg4-JO-Gqu" customClass="SettingsView" customModule="TinderSwipeCardsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5hD-vc-JG0"/>
+                        <viewControllerLayoutGuide type="bottom" id="edj-zv-S20"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xFT-SG-qaV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dude2" translatesAutoresizingMaskIntoConstraints="NO" id="3oS-5F-gS8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="830"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fT0-ph-HGq">
+                                <rect key="frame" x="48" y="192" width="319" height="142"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJA-vZ-iBB">
+                                <rect key="frame" x="111" y="600" width="193" height="50"/>
+                                <state key="normal" backgroundImage="GoButton"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Hlj-WF-jSy"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2500" minValue="0.0" maxValue="5000" translatesAutoresizingMaskIntoConstraints="NO" id="h3X-ze-TOC">
+                                <rect key="frame" x="54" y="176" width="252" height="31"/>
+                                <connections>
+                                    <action selector="costSlider:" destination="Vg4-JO-Gqu" eventType="valueChanged" id="RD7-1M-qTU"/>
+                                </connections>
+                            </slider>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDw-46-P0S">
+                                <rect key="frame" x="48" y="386" width="319" height="130"/>
+                            </pickerView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-45" maxValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="q6W-kX-pOE">
+                                <rect key="frame" x="54" y="109" width="252" height="31"/>
+                                <connections>
+                                    <action selector="tempSlider:" destination="Vg4-JO-Gqu" eventType="valueChanged" id="hUp-le-FpR"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desired temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x86-9h-BIN">
+                                <rect key="frame" x="102" y="86" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfE-mX-Bmb">
+                                <rect key="frame" x="320" y="113" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9F-ei-LVH">
+                                <rect key="frame" x="320" y="180" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maximum cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6g-O7-9mn">
+                                <rect key="frame" x="125" y="153" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fT0-ph-HGq" firstAttribute="centerX" secondItem="xFT-SG-qaV" secondAttribute="centerX" id="E7d-Ha-9nS"/>
+                            <constraint firstItem="MJA-vZ-iBB" firstAttribute="centerX" secondItem="xFT-SG-qaV" secondAttribute="centerX" id="Jfu-kg-L6l"/>
+                            <constraint firstItem="GDw-46-P0S" firstAttribute="centerX" secondItem="xFT-SG-qaV" secondAttribute="centerX" id="wvv-a7-abe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="costLabel" destination="O9F-ei-LVH" id="1X6-Aj-hAY"/>
+                        <outlet property="costSlider" destination="h3X-ze-TOC" id="3SG-tx-E05"/>
+                        <outlet property="justPicker" destination="fT0-ph-HGq" id="beh-tm-jEF"/>
+                        <outlet property="justPicker2" destination="GDw-46-P0S" id="bHc-86-dGC"/>
+                        <outlet property="tempSlider" destination="q6W-kX-pOE" id="p3y-fp-mZJ"/>
+                        <outlet property="temperatureLabel" destination="DfE-mX-Bmb" id="sfC-kp-L1L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8P-oc-XzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="130"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dys-CR-nPx">
@@ -127,10 +212,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="150"/>
+            <point key="canvasLocation" x="20" y="927"/>
         </scene>
     </scenes>
     <resources>
+        <image name="GoButton" width="350" height="100"/>
+        <image name="dude2" width="455" height="821"/>
         <image name="loginScr" width="960" height="1704"/>
         <image name="logo" width="512" height="512"/>
     </resources>
