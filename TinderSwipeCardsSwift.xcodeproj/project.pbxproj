@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		47C2B9F61BE4631B00F53885 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C2B9F51BE4631B00F53885 /* LoginController.swift */; };
+		85A04D681BE5060D001389F2 /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A04D671BE5060D001389F2 /* SwipeCard.swift */; };
+		85A04D6A1BE50624001389F2 /* SwipeCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A04D691BE50624001389F2 /* SwipeCard.xib */; };
 		CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */; };
 		CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002C1AF1D31400AF5C5F /* ViewController.swift */; };
 		CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2D002E1AF1D31400AF5C5F /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		47C2B9F51BE4631B00F53885 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		85A04D671BE5060D001389F2 /* SwipeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCard.swift; sourceTree = "<group>"; };
+		85A04D691BE50624001389F2 /* SwipeCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeCard.xib; sourceTree = "<group>"; };
 		CC2D00251AF1D31400AF5C5F /* TinderSwipeCardsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderSwipeCardsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00291AF1D31400AF5C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85A04D5A1BE503AB001389F2 /* SwipeCard */ = {
+			isa = PBXGroup;
+			children = (
+				85A04D671BE5060D001389F2 /* SwipeCard.swift */,
+				85A04D691BE50624001389F2 /* SwipeCard.xib */,
+			);
+			name = SwipeCard;
+			sourceTree = "<group>";
+		};
 		CC2D001C1AF1D31400AF5C5F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,7 @@
 		CC2D00271AF1D31400AF5C5F /* TinderSwipeCardsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				85A04D5A1BE503AB001389F2 /* SwipeCard */,
 				CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */,
 				CC2D002C1AF1D31400AF5C5F /* ViewController.swift */,
 				CC2D004E1AF2107800AF5C5F /* DraggableViewBackground.swift */,
@@ -207,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */,
+				85A04D6A1BE50624001389F2 /* SwipeCard.xib in Resources */,
 				CC2D00351AF1D31400AF5C5F /* LaunchScreen.xib in Resources */,
 				CC2D00321AF1D31400AF5C5F /* Images.xcassets in Resources */,
 			);
@@ -230,6 +245,7 @@
 				47C2B9F61BE4631B00F53885 /* LoginController.swift in Sources */,
 				CC2D004D1AF1D70D00AF5C5F /* OverlayView.swift in Sources */,
 				CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */,
+				85A04D681BE5060D001389F2 /* SwipeCard.swift in Sources */,
 				CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */,
 				CC2D004F1AF2107800AF5C5F /* DraggableViewBackground.swift in Sources */,
 			);

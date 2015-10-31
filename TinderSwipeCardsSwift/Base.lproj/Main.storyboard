@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="width" constant="38" id="iDc-hC-VLR"/>
                                 </constraints>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="70S-gu-IMP"/>
@@ -61,7 +61,7 @@
                             <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saj-UB-32z">
                                 <rect key="frame" x="274" y="503" width="53" height="30"/>
                                 <state key="normal" title="Call API">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="callApi:" destination="SqD-6v-ogk" eventType="touchUpInside" id="d7s-3c-CXr"/>
@@ -70,6 +70,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zmI-ga-t2S">
                                 <rect key="frame" x="218" y="86" width="164" height="169"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-ib-kzB">
+                                <rect key="frame" x="277" y="550" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="j8i-IL-6WJ" kind="show" id="Vr8-nm-hkQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,6 +92,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztu-WR-6ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="-668"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dys-CR-nPx">
+            <objects>
+                <viewController id="j8i-IL-6WJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nO0-TK-xR5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lsg-hu-Msq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eq8-sY-otk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmT-3a-9sm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="-684"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
