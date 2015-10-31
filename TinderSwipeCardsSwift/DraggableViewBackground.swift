@@ -33,7 +33,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         super.init(frame: frame)
         super.layoutSubviews()
         self.setupView()
-        exampleCardLabels = ["Cassablanca", "Malaga", "Malaga", "Alicante", "Valencia", "Thessaloniki", "Barcelona", "Barcelona", "Larnaca", "Athens", "Malaga", "Malaga", "Marrakesh", "Lisbon", "Faro", "Alicante", "Nice", "Barcelona", "Barcelona", "Paris"]
+        exampleCardLabels = ["Cassablanca 410€ ", "Malaga 958€", "Malaga 628€", "Alicante 756€", "Valencia 628€", "Thessaloniki 748€", "Barcelona 338€", "Barcelona 348€", "Larnaca 816€", "Athens 810€", "Malaga 1136€", "Malaga 806€", "Marrakesh 606€", "Lisbon 520€", "Faro 774€", "Alicante 796€", "Nice 590€", "Barcelona 294€", "Barcelona 304€", "Paris 624€"]
         exampleCardAirports = ["CMN", "AGP", "AGP", "ALC", "VLC", "SKG", "BCN", "BCN", "LCA", "ATH", "AGP", "AGP", "RAK", "LIS", "FAO", "ALC", "NCE", "BCN", "BCN", "ORY"]
         allCards = []
         loadedCards = []
@@ -42,7 +42,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     }
 
     func setupView() -> Void {
-        self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 1)
+        self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 0)
 
         xButton = UIButton(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2 + 35, self.frame.size.height/2 + CARD_HEIGHT/2 + 10, 59, 59))
         xButton.setImage(UIImage(named: "xButton"), forState: UIControlState.Normal)

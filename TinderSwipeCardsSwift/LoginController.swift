@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-
+var pricesTotal = [Int]()
 
 
 class LoginController: UIViewController {
@@ -47,7 +47,7 @@ class LoginController: UIViewController {
                 var pricesRetur = [Int]()
                 
                 //Table with the total prices of the trips
-                var pricesTotal = [Int]()
+                //var pricesTotal = [Int]()
                 
                 //Table with the departure times of the aller
                 var departureTimeAller = [String]()

@@ -43,6 +43,7 @@ class DraggableView: UIView {
         information.text = "no info given"
         information.textAlignment = NSTextAlignment.Center
         information.textColor = UIColor.whiteColor()
+        information.font = UIFont(name:"HelveticaNeue-Bold", size: 24)
 
         //self.backgroundColor = UIColor(patternImage: UIImage(named:"CMN.jpg")!)
 
