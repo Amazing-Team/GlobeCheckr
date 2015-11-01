@@ -98,13 +98,22 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     
     func cardSwipedRight(card: UIView) -> Void {
         loadedCards.removeAtIndex(0)
-        
+        print("chose this2:")
         if cardsLoadedIndex < allCards.count {
             loadedCards.append(allCards[cardsLoadedIndex])
             cardsLoadedIndex = cardsLoadedIndex + 1
             self.insertSubview(loadedCards[MAX_BUFFER_SIZE - 1], belowSubview: loadedCards[MAX_BUFFER_SIZE - 2])
         }
+        
+//        let vc = ViewControllerMatch(nibName: "ViewControllerMatch", bundle: nil)
+//        
+//        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//        let navController = appDelegate.navController
+//        
+//        navController?.pushViewController(vc, animated: true)
     }
+    
+    
 
     func swipeRight() -> Void {
         if loadedCards.count <= 0 {

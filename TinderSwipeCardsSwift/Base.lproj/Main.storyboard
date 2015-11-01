@@ -36,18 +36,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginScr" translatesAutoresizingMaskIntoConstraints="NO" id="vLz-wt-LUZ">
                                 <rect key="frame" x="0.0" y="0.0" width="469" height="751"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-kV-ADX">
-                                <rect key="frame" x="281" y="470" width="38" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="iDc-hC-VLR"/>
-                                </constraints>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Vg4-JO-Gqu" kind="show" id="ZjS-bT-ek8"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WL8-KI-qoh">
                                 <rect key="frame" x="204" y="432" width="192" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -58,30 +46,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saj-UB-32z">
-                                <rect key="frame" x="274" y="503" width="53" height="30"/>
-                                <state key="normal" title="Call API">
-                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="callApi:" destination="SqD-6v-ogk" eventType="touchUpInside" id="d7s-3c-CXr"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zmI-ga-t2S">
                                 <rect key="frame" x="185" y="110" width="231" height="235"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-ib-kzB">
-                                <rect key="frame" x="277" y="550" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-kV-ADX">
+                                <rect key="frame" x="204" y="477" width="192" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="iDc-hC-VLR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="j8i-IL-6WJ" kind="show" id="Vr8-nm-hkQ"/>
+                                    <segue destination="Vg4-JO-Gqu" kind="show" id="ZjS-bT-ek8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WL8-KI-qoh" firstAttribute="centerX" secondItem="OPZ-3P-Q0l" secondAttribute="centerX" id="3LF-z5-Tdu"/>
-                            <constraint firstItem="saj-UB-32z" firstAttribute="centerX" secondItem="OPZ-3P-Q0l" secondAttribute="centerX" id="4kP-GX-rPo"/>
                             <constraint firstItem="cGE-kV-ADX" firstAttribute="centerX" secondItem="OPZ-3P-Q0l" secondAttribute="centerX" id="5o6-P4-Eif"/>
                             <constraint firstItem="bfK-py-UK1" firstAttribute="centerX" secondItem="OPZ-3P-Q0l" secondAttribute="centerX" id="8tB-iK-289"/>
                             <constraint firstItem="zmI-ga-t2S" firstAttribute="centerX" secondItem="OPZ-3P-Q0l" secondAttribute="centerX" id="eGF-bs-c6r"/>
@@ -115,6 +99,7 @@
                                 <rect key="frame" x="111" y="600" width="193" height="50"/>
                                 <state key="normal" backgroundImage="GoButton"/>
                                 <connections>
+                                    <action selector="callAPIandGo:" destination="Vg4-JO-Gqu" eventType="touchUpInside" id="z0B-xq-1j7"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Hlj-WF-jSy"/>
                                 </connections>
                             </button>
@@ -213,6 +198,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="927"/>
+        </scene>
+        <!--View Controller Match-->
+        <scene sceneID="TKm-4T-l9s">
+            <objects>
+                <viewController id="s4l-oh-aXU" customClass="ViewControllerMatch" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KCE-MP-LE8"/>
+                        <viewControllerLayoutGuide type="bottom" id="atX-Yp-NYO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hvj-2N-IQe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ai7-bL-zeq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="1629"/>
         </scene>
     </scenes>
     <resources>

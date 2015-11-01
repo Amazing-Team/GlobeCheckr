@@ -132,6 +132,7 @@ class DraggableView: UIView {
                 self.removeFromSuperview()
         })
         delegate.cardSwipedRight(self)
+        
     }
 
     func leftAction() -> Void {
